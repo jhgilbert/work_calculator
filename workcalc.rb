@@ -1,7 +1,5 @@
 work_summary = []
-
-puts "What is today's date MM.DD.YY?"
-log_filename = gets.to_s
+time = Time.new
 
 loop do
     
@@ -34,6 +32,7 @@ break if sprint == "N"
 end
 
 print work_summary, "\n"
-File.open(log_filename, "w") do |f|
-  f.print work_summary
+File.open("progress_log.txt", "a") do |f|
+  f.puts "#{time.month}-#{time.day}-#{time.year}"
+  f.print work_summary, "\n"
 end
