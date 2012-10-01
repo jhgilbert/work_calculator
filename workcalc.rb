@@ -19,9 +19,9 @@ loop do
   words_edited = current_place - starting_point
 
   profit = (words_edited * 0.0104) * 0.66
-  puts "You have made $#{profit} in 20 minutes."
+  puts "You have made $#{"%.2f" % profit} in 20 minutes."
   
-  work_summary << "$#{profit}"
+  work_summary << "$#{"%.2f" % profit}"
   
   print work_summary, "\n"
   
