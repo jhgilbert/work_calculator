@@ -1,5 +1,5 @@
 work_summary = []
-time = Time.new
+t = Time.new
 
 loop do
     
@@ -9,8 +9,8 @@ loop do
   system('say "go"')
   puts "The clock is running..."
 
-  sleep(1) #needs to be 1200, this is just for testing
-
+  sleep(1) #needs to be 1200, any deviation is just for testing
+  
   system('say "Time is up."')
 
   puts "Time is up. Where are you now?"
@@ -33,6 +33,6 @@ end
 
 print work_summary, "\n"
 File.open("progress_log.txt", "a") do |f|
-  f.puts "#{time.month}-#{time.day}-#{time.year}"
+  f.puts t.strftime("%m-%d-%Y")
   f.print work_summary, "\n"
 end
