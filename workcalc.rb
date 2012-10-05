@@ -9,10 +9,22 @@ loop do
   system('say "go"')
   puts "The clock is running..."
 
-  sleep(1) #needs to be 1200, any deviation is just for testing
+  sleep(300) #needs to be 300, any deviation is just for testing
+  
+  system('say "Fifteen remaining."')
+  
+  sleep(300) #needs to be 300, any deviation is just for testing
+  
+  system('say "Ten remaining."')
+  
+  sleep(300) #needs to be 300, any deviation is just for testing
+  
+  system('say "Five remaining."')
+  
+  sleep(300) #needs to be 300, any deviation is just for testing
   
   system('say "Time is up."')
-
+  
   puts "Time is up. Where are you now?"
   current_place = gets.to_f
 
