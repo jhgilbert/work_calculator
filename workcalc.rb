@@ -8,6 +8,14 @@ loop do
 
   system('say "go"')
   puts "The clock is running..."
+  
+  sleep(300) #needs to be 300, any deviation is just for testing
+  
+  system('say "Twenty-five remaining."')
+  
+  sleep(300) #needs to be 300, any deviation is just for testing
+  
+  system('say "Twenty remaining."')
 
   sleep(300) #needs to be 300, any deviation is just for testing
   
@@ -31,7 +39,7 @@ loop do
   words_edited = current_place - starting_point
 
   profit = (words_edited * 0.0104) * 0.66
-  puts "You have made $#{"%.2f" % profit} in 20 minutes."
+  puts "You have made $#{"%.2f" % profit} in 30 minutes."
   
   work_summary << "$#{"%.2f" % profit}"
   
