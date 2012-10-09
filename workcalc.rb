@@ -33,8 +33,7 @@ loop do
   profit = (words_edited * 0.0104) * 0.66
   puts "You have made $#{"%.2f" % profit} in #{sprint_minutes} minutes."
   
-  work_summary << "$#{"%.2f" % profit}"
-  work_summary << sprint_minutes
+  work_summary << ["$#{"%.2f" % profit}", sprint_minutes]
   
   print work_summary, "\n"
   
