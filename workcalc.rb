@@ -18,8 +18,7 @@ loop do
   sleep(1) #needs to be 300, any deviation is just for testing
   sprint_seconds = sprint_seconds - 300
   minutes_remaining = sprint_seconds / 60
-  puts 7.chr
-  puts "#{minutes_remaining} minutes remaining."
+  system("say '#{minutes_remaining} minutes remaining.'")
   
   break if sprint_seconds == 0
   end
