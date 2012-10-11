@@ -54,6 +54,18 @@ loop do
   
   puts "Total minutes worked:"
   print minutes_worked.sum, "\n"
+  
+  profit_sum = work_summary.dup
+  profit_sum.map! do |s| 
+    s.delete("$")
+  end
+  profit_sum.map! do |s|
+    s.to_f
+  end
+  profit_sum = profit_sum.sum
+  
+  puts "Total profit made:"
+  print "$#{"%.2f" % profit_sum}", "\n"
   puts "*******"
   
   puts "Would you like to add a sprint, Y/N?"
