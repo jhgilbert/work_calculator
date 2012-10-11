@@ -15,7 +15,7 @@ loop do
   
   loop do
   
-  sleep(1) #needs to be 300, any deviation is just for testing
+  sleep(300) #needs to be 300, any deviation is just for testing
   sprint_seconds = sprint_seconds - 300
   minutes_remaining = sprint_seconds / 60
   system("say '#{minutes_remaining} minutes remaining.'")
