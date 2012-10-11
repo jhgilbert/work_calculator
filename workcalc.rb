@@ -1,4 +1,13 @@
+include Enumerable
+
+class Array
+  def sum
+    self.inject{|sum,x| sum + x }
+  end
+end
+
 work_summary = []
+minutes_worked = []
 t = Time.new
 
 loop do
@@ -15,7 +24,7 @@ loop do
   
   loop do
   
-  sleep(300) #needs to be 300, any deviation is just for testing
+  sleep(1) #needs to be 300, any deviation is just for testing
   sprint_seconds = sprint_seconds - 300
   minutes_remaining = sprint_seconds / 60
   system("say '#{minutes_remaining} minutes remaining.'")
@@ -33,9 +42,19 @@ loop do
   profit = (words_edited * 0.0104) * 0.66
   puts "You have made $#{"%.2f" % profit} in #{sprint_minutes} minutes."
   
-  work_summary << ["$#{"%.2f" % profit}", sprint_minutes]
+  work_summary << "$#{"%.2f" % profit}"
+  minutes_worked << sprint_minutes
   
+  puts "*******"
+  puts "Profits by session:"
   print work_summary, "\n"
+  
+  puts "Sessions so far:"
+  print minutes_worked, "\n"
+  
+  puts "Total minutes worked:"
+  print minutes_worked.sum, "\n"
+  puts "*******"
   
   puts "Would you like to add a sprint, Y/N?"
   sprint = gets.chomp
@@ -43,9 +62,27 @@ loop do
 break if sprint == "N"
 end
 
-print work_summary, "\n"
+profit_sum = work_summary.dup
+profit_sum.map! do |s| 
+  s.delete("$")
+end
+profit_sum.map! do |s|
+  s.to_f
+end
+profit_sum = profit_sum.sum
+
+print "$#{"%.2f" % profit_sum}", "\n"
+puts "Saving to progress log..."
+puts "Good-bye."
 
 File.open("progress_log.txt", "a") do |f|
   f.puts t.strftime("%m-%d-%Y")
+  f.puts "Session profits:"
   f.print work_summary, "\n"
+  f.puts "Session times:"
+  f.print minutes_worked, "\n"
+  f.puts "Total minutes worked:"
+  f.print minutes_worked.sum, "\n"
+  f.puts "Total earned:"
+  f.print "$#{"%.2f" % profit_sum}", "\n", "\n"
 end
