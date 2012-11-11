@@ -10,6 +10,8 @@ work_summary = []
 minutes_worked = []
 t = Time.new
 
+stopping_point = nil
+
 loop do
     
   puts "What is your starting point?"
@@ -24,7 +26,7 @@ loop do
   
   loop do
   
-  sleep(1) #needs to be 300, any deviation is just for testing
+  sleep(300) #needs to be 300, any deviation is just for testing
   sprint_seconds = sprint_seconds - 300
   minutes_remaining = sprint_seconds / 60
   system("say '#{minutes_remaining} minutes remaining.'")
@@ -38,8 +40,10 @@ loop do
   current_place = gets.to_f
 
   words_edited = current_place - starting_point
+  
+  stopping_point = current_place.to_i
 
-  profit = (words_edited * 0.0104) * 0.66
+  profit = (words_edited * 0.0104) * 0.66 # value in parens is 0.0104 for most projects, .00324 for QRs
   puts "You have made $#{"%.2f" % profit} in #{sprint_minutes} minutes."
   
   work_summary << "$#{"%.2f" % profit}"
@@ -96,5 +100,7 @@ File.open("progress_log.txt", "a") do |f|
   f.puts "Total minutes worked:"
   f.print minutes_worked.sum, "\n"
   f.puts "Total earned:"
-  f.print "$#{"%.2f" % profit_sum}", "\n", "\n"
+  f.print "$#{"%.2f" % profit_sum}", "\n"
+  f.puts "Stopping point:"
+  f.print stopping_point, "\n", "\n"
 end
