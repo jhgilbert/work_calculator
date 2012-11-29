@@ -24,15 +24,17 @@ loop do
   system('say "go"')
   puts "The clock is running..."
   
-  loop do
+  sleep(sprint_seconds)
   
-  sleep(300) #needs to be 300, any deviation is just for testing
-  sprint_seconds = sprint_seconds - 300
-  minutes_remaining = sprint_seconds / 60
-  system("say '#{minutes_remaining} minutes remaining.'")
+  # loop do
   
-  break if sprint_seconds == 0
-  end
+  # sleep(300) #needs to be 300, any deviation is just for testing
+  # sprint_seconds = sprint_seconds - 300
+  # minutes_remaining = sprint_seconds / 60
+  # system("say '#{minutes_remaining} minutes remaining.'")
+  
+  # break if sprint_seconds == 0
+  # end
   
   system('say "Time is up."')
   

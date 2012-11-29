@@ -1,0 +1,284 @@
+Progress Log
+
+
+
+10-11-2012
+Session profits:
+["$10.15", "$9.14", "$7.92", "$2.60", "$7.43", "$11.13", "$5.97", "$30.17"]
+Session times:
+[30, 20, 20, 5, 15, 20, 10, 60]
+Total minutes worked:
+180
+Total earned:
+$84.51
+
+10-12-2012
+Session profits:
+["$9.55", "$13.20", "$25.73", "$10.49"]
+Session times:
+[20, 30, 20, 10]
+Total minutes worked:
+80
+Total earned:
+$58.97
+
+10-15-2012
+Session profits:
+["$36.46", "$50.09", "$15.75"]
+Session times:
+[60, 60, 20]
+Total minutes worked:
+140
+Total earned:
+$102.30
+
+10-16-2012
+Session profits:
+["$21.09", "$24.79", "$29.67"]
+Session times:
+[60, 60, 60]
+Total minutes worked:
+180
+Total earned:
+$75.55
+
+10-17-2012
+Session profits:
+["$28.42", "$0.00", "$27.61", "$35.10"]
+Session times:
+[60, 5, 60, 60]
+Total minutes worked:
+185
+Total earned:
+$91.13
+
+10-18-2012
+Session profits:
+["$34.16", "$38.63"]
+Session times:
+[60, 60]
+Total minutes worked:
+120
+Total earned:
+$72.79
+
+10-21-2012
+Session profits:
+["$26.50", "$20.48"]
+Session times:
+[60, 5]
+Total minutes worked:
+65
+Total earned:
+$46.98
+
+10-22-2012
+Session profits:
+["$42.11"]
+Session times:
+[5]
+Total minutes worked:
+5
+Total earned:
+$42.11
+
+10-23-2012
+Session profits:
+["$13.38", "$12.41"]
+Session times:
+[60, 60]
+Total minutes worked:
+120
+Total earned:
+$25.79
+
+10-24-2012
+Profits by session:
+["$19.64", "$28.14", "$15.11", "$11.26", "$7.72", "$6.08"]
+Sessions so far:
+[60, 60, 40, 30, 20, 10]
+Total minutes worked:
+220
+Total profit made:
+$87.95
+
+
+10-24-2012
+Session profits:
+["$2.47"]
+Session times:
+[5]
+Total minutes worked:
+5
+Total earned:
+$2.47
+
+10-25-2012
+Session profits:
+["$10.15", "$8.10"]
+Session times:
+[60, 60]
+Total minutes worked:
+120
+Total earned:
+$18.25
+
+10-26-2012
+Session profits:
+["$0.00", "$11.90", "$12.68", "$21.70", "$3.95"]
+Session times:
+[60, 60, 30, 60, 5]
+Total minutes worked:
+215
+Total earned:
+$50.23
+
+10-31-2012
+Session profits:
+["$9.01", "$16.11", "$88.06", "$35.77", "$0.40"]
+Session times:
+[60, 60, 60, 30, 10]
+Total minutes worked:
+220
+Total earned:
+$149.35
+
+11-07-2012
+Session profits:
+["$25.51", "$7.84", "$6.32", "$19.84"]
+Session times:
+[20, 20, 20, 40]
+Total minutes worked:
+100
+Total earned:
+$59.51
+
+11-08-2012
+Session profits:
+["$21.99", "$4.37", "$5.50", "$5.99", "$11.70", "$7.74", "$8.00"]
+Session times:
+[60, 10, 10, 10, 20, 15, 15]
+Total minutes worked:
+140
+Total earned:
+$65.29
+
+11-09-2012
+Session profits:
+["$13.21", "$2.81", "$6.81", "$7.53", "$6.26", "$3.29"]
+Session times:
+[60, 5, 10, 10, 10, 5]
+Total minutes worked:
+100
+Total earned:
+$39.91
+
+
+11-10-2012
+Session profits:
+["$38.73"]
+Session times:
+[60]
+Total minutes worked:
+60
+Total earned:
+$38.73
+Stopping point:
+29637
+
+11-11-2012
+Session profits:
+["$36.05", "$31.92"]
+Session times:
+[60, 60]
+Total minutes worked:
+120
+Total earned:
+$67.97
+Stopping point:
+39540
+
+11-12-2012
+Session profits:
+["$34.68", "$34.53", "$39.94"]
+Session times:
+[60, 60, 60]
+Total minutes worked:
+180
+Total earned:
+$109.15
+Stopping point:
+55442
+
+11-19-2012
+Session profits:
+["$21.97"]
+Session times:
+[40]
+Total minutes worked:
+40
+Total earned:
+$21.97
+Stopping point:
+3201
+
+11-20-2012
+Session profits:
+["$23.76"]
+Session times:
+[60]
+Total minutes worked:
+60
+Total earned:
+$23.76
+Stopping point:
+6663
+
+11-20-2012
+Session profits:
+["$56.69", "$28.41"]
+Session times:
+[180, 120]
+Total minutes worked:
+300
+Total earned:
+$85.10
+Stopping point:
+19061
+
+11-21-2012
+Session profits:
+["$29.04", "$27.22"]
+Session times:
+[120, 60, 1]
+Total minutes worked:
+181
+Total earned:
+$56.26
+Stopping point:
+27257
+
+11-22-2012
+Session profits:
+["$32.84", "$22.96"]
+Session times:
+[60, 30]
+Total minutes worked:
+90
+Total earned:
+$55.80
+Stopping point:
+35386
+
+11-23-2012
+Session profits:
+["$115.07"]
+Session times:
+[1]
+Total minutes worked:
+1
+Total earned:
+$115.07
+Stopping point:
+52151
+
