@@ -13,6 +13,29 @@ loop do
     sprint.debrief # Gathers data about the productivity of the sprint
     profits_array << sprint.profit
     session_lengths << sprint.length
+    puts "*******"
+    puts "Profits by session:"
+    print profits_array, "\n"
+  
+    puts "Sessions so far:"
+    print session_lengths, "\n"
+  
+    puts "Total minutes worked:"
+    print session_lengths.sum, "\n"
+  
+    profit_sum = profits_array.dup
+    profit_sum.map! do |s| 
+      s.delete("$")
+    end
+    profit_sum.map! do |s|
+      s.to_f
+    end
+    profit_sum = profit_sum.sum
+  
+    puts "Total profit made:"
+    print "$#{profit_sum}", "\n"
+    puts "*******"
+    
   else "Saving session results to progress log ... good-bye."
   end
   break if answer == "N"
