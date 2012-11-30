@@ -58,8 +58,8 @@ loop do
       f.print session_lengths.sum, "\n"
       f.puts "Total earned:"
       f.print "$#{profit_sum}", "\n"
-      f.puts "Stopping point:"
-      f.print sprint.end_word_count, "\n", "\n"
+ #     f.puts "Stopping point:"
+ #    f.print sprint.end_word_count, "\n", "\n"
     end
     puts "Good-bye."
   end

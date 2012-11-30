@@ -5,7 +5,7 @@ class Sprint
   def start
     puts "What is your starting point?"
     @begin_word_count = gets.to_f
-    puts "How long of a sprint would you like, in minutes?"
+    puts "How long of a sprint would you like, in minutes? (multiple of 5)"
     @length = gets.to_i
     @time_remaining = @length * 60
     system('say "go"')
