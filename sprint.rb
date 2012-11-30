@@ -1,18 +1,21 @@
 class Sprint
-  attr_accessor :starting_point, :length
+  attr_accessor :begin_word_count, :length, :end_word_count, :profit, 
+  :time_remaining
   
   def initialize
-    # gather information about session starting point and length
+    puts "What is your starting point?"
+    @begin_word_count = gets.to_f
+    puts "How long of a sprint would you like, in minutes?"
+    @length = gets.to_i
+    @time_remaining = @length * 60
   end
   
   def countdown
-    sprint_seconds = sprint.length_to_i * 60
     loop do
       sleep(300) #needs to be 300, any deviation is just for testing
-      sprint_seconds = sprint_seconds - 300
-      sprint.length = sprint_seconds / 60
-      system("say '#{sprint.length} minutes remaining.'")
-      break if sprint_seconds == 0
+      @time_remaining = @time_remaining - 300
+      system("say '#{@time_remaining} minutes remaining.'")
+      break if @time_remaining == 0
     end
   end
   
