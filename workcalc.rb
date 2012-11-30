@@ -1,6 +1,12 @@
 include Enumerable
 require_relative 'sprint'
 
+class Array
+  def sum
+    self.inject{|sum,x| sum + x }
+  end
+end
+
 t = Time.new
 profits_array = []
 session_lengths = []
