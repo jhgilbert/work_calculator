@@ -29,5 +29,5 @@ class Sprint
     @profit = "%.2f" % @profit
     puts "You have made $#{@profit} in #{@length} minutes."
   end
-  
-  
+
+end
