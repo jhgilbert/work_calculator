@@ -30,3 +30,4 @@ class Sprint
     puts "You have made $#{@profit} in #{@length} minutes."
   end
   
+  
