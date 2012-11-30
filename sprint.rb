@@ -2,12 +2,14 @@ class Sprint
   attr_accessor :begin_word_count, :length, :end_word_count, :profit, 
   :time_remaining
   
-  def initialize
+  def start
     puts "What is your starting point?"
     @begin_word_count = gets.to_f
     puts "How long of a sprint would you like, in minutes?"
     @length = gets.to_i
     @time_remaining = @length * 60
+    system('say "go"')
+    puts "The clock is running..."
   end
   
   def countdown
@@ -19,4 +21,3 @@ class Sprint
     end
   end
   
-end 
