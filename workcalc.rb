@@ -11,6 +11,8 @@ t = Time.new
 profits_array = []
 session_lengths = []
 
+profit_sum = nil
+
 loop do
   puts "Would you like to do a sprint? Y/N"
   answer = gets.chomp
@@ -43,9 +45,7 @@ loop do
     puts "Total profit made:"
     print "$#{profit_sum}", "\n"
     puts "*******"
-    
-    stopping_point = sprint.end_word_count
-    
+        
   else 
     puts "Saving session results to progress log ..."
     File.open("progress_log.txt", "a") do |f|
@@ -59,7 +59,7 @@ loop do
       f.puts "Total earned:"
       f.print "$#{profit_sum}", "\n"
       f.puts "Stopping point:"
-      f.print stopping_point, "\n", "\n"
+      f.print sprint.end_word_count, "\n", "\n"
     end
     puts "Good-bye."
   end
