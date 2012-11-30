@@ -12,6 +12,7 @@ profits_array = []
 session_lengths = []
 
 profit_sum = nil
+stopping_point = nil
 
 loop do
   puts "Would you like to do a sprint? Y/N"
@@ -45,6 +46,8 @@ loop do
     puts "Total profit made:"
     print "$#{profit_sum}", "\n"
     puts "*******"
+    
+    stopping_point = sprint.end_word_count
         
   else 
     puts "Saving session results to progress log ..."
@@ -58,8 +61,8 @@ loop do
       f.print session_lengths.sum, "\n"
       f.puts "Total earned:"
       f.print "$#{profit_sum}", "\n"
- #     f.puts "Stopping point:"
- #    f.print sprint.end_word_count, "\n", "\n"
+      f.puts "Stopping point:"
+      f.print stopping_point.to_i, "\n", "\n"
     end
     puts "Good-bye."
   end
