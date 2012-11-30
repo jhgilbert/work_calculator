@@ -1,4 +1,5 @@
 include Enumerable
+require_relative 'sprint'
 
 t = Time.new
 profits_array = []
