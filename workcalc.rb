@@ -6,35 +6,44 @@ class Array
   end
 end
 
+profits_array = []
+session_lengths = []
+
+loop do
+  puts "Would you like to do a sprint? Y/N"
+  answer = gets.to_s
+  if answer == "Y" do
+    sprint = Sprint.new
+    sprint.start # Asks about current spot in manuscript, length of desired sprint, and starts the clock
+    sprint.countdown # Runs the clock down, offering warnings every five minutes
+    sprint.debrief # Gathers data about the productivity of the sprint
+    profits_array << sprint.profit
+    session_lengths << sprint.length
+  else "Saving session results to progress log ... good-bye."
+  end
+  break if answer == "N"
+end
+
+
+
+
+OLD CODE--------------------------------------------
+include Enumerable
+
+class Array
+  def sum
+    self.inject{|sum,x| sum + x }
+  end
+end
+
 work_summary = []
 minutes_worked = []
 t = Time.new
 
 stopping_point = nil
 
-loop do
-    
-  puts "What is your starting point?"
-  starting_point = gets.to_f
-  
-  puts "How long of a sprint would you like, in minutes? (increments of 5)"
-  sprint_minutes = gets.to_i
-  sprint_seconds = sprint_minutes * 60
 
-  system('say "go"')
-  puts "The clock is running..."
-  
-  sleep(sprint_seconds)
-  
-  loop do
-  
-  sleep(300) #needs to be 300, any deviation is just for testing
-  sprint_seconds = sprint_seconds - 300
-  minutes_remaining = sprint_seconds / 60
-  system("say '#{minutes_remaining} minutes remaining.'")
-  
-  break if sprint_seconds == 0
-  end
+
   
   system('say "Time is up."')
   
