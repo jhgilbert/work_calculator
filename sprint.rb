@@ -14,7 +14,7 @@ class Sprint
     loop do
       sleep(300) #needs to be 300, any deviation is just for testing
       @time_remaining = @time_remaining - 300
-      system("say '#{@time_remaining} minutes remaining.'")
+      system("say '#{@time_remaining / 60} minutes remaining.'")
       break if @time_remaining == 0
     end
   end
