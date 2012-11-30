@@ -7,7 +7,7 @@ session_lengths = []
 loop do
   puts "Would you like to do a sprint? Y/N"
   answer = gets.chomp
-  if answer == "Y" do
+  if answer == "Y"
     sprint = Sprint.new
     sprint.start # Asks about current spot in manuscript, length of desired sprint, and starts the clock
     sprint.countdown # Runs the clock down, offering warnings every five minutes
